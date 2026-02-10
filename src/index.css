@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* inTandem/vcita Brand Design System
+   Primary Yellow: #FFC511 -> HSL(45, 100%, 54%)
+   Primary Black: #1D1D1B -> HSL(60, 5%, 11%)
+   All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 60 5% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 60 5% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 60 5% 11%;
+
+    /* inTandem Yellow */
+    --primary: 45 100% 54%;
+    --primary-foreground: 60 5% 11%;
+
+    --secondary: 45 30% 95%;
+    --secondary-foreground: 60 5% 11%;
+
+    --muted: 45 10% 96%;
+    --muted-foreground: 60 5% 40%;
+
+    --accent: 45 100% 54%;
+    --accent-foreground: 60 5% 11%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Warning Yellow (brand color) */
+    --warning: 45 100% 54%;
+    --warning-foreground: 60 5% 11%;
+
+    --border: 45 20% 90%;
+    --input: 45 20% 90%;
+    --ring: 45 100% 54%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 60 5% 11%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 45 100% 54%;
+    --sidebar-primary-foreground: 60 5% 11%;
+    --sidebar-accent: 60 5% 18%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 60 5% 20%;
+    --sidebar-ring: 45 100% 54%;
+  }
+
+  .dark {
+    --background: 60 5% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 60 5% 11%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 60 5% 11%;
+    --popover-foreground: 0 0% 98%;
+
+    /* inTandem Yellow */
+    --primary: 45 100% 54%;
+    --primary-foreground: 60 5% 11%;
+
+    --secondary: 60 5% 18%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 60 5% 18%;
+    --muted-foreground: 45 10% 60%;
+
+    --accent: 45 100% 54%;
+    --accent-foreground: 60 5% 11%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Warning Yellow (brand color) */
+    --warning: 45 100% 54%;
+    --warning-foreground: 60 5% 11%;
+
+    --border: 60 5% 20%;
+    --input: 60 5% 20%;
+    --ring: 45 100% 54%;
+
+    --sidebar-background: 60 5% 6%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 45 100% 54%;
+    --sidebar-primary-foreground: 60 5% 11%;
+    --sidebar-accent: 60 5% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 60 5% 15%;
+    --sidebar-ring: 45 100% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
